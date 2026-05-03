@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mada-Connect | Ventes, Services & Entraide</title>
+    <!-- On utilise une police propre et moderne -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #d32f2f; /* Rouge */
+            --secondary: #388e3c; /* Vert */
+            --white: #ffffff;
+            --light-bg: #f9f9f9;
+            --dark: #2d3436;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+
+        body { background-color: var(--light-bg); color: var(--dark); line-height: 1.6; }
+
+        /* Header & Navigation */
+        header {
+            background: var(--white);
+            padding: 15px;
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo { font-size: 1.5rem; font-weight: 600; color: var(--primary); text-decoration: none; }
+
+        .nav-links { display: flex; justify-content: center; gap: 15px; margin-top: 10px; }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 5px 10px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover { background: var(--primary); color: white; }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1583241801142-113b8d5ba551?auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 { font-size: 2rem; margin-bottom: 10px; }
+
+        /* Sections */
+        .section-title {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 1.5rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: var(--secondary);
+            margin: 10px auto;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 0 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Cartes */
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover { transform: translateY(-8px); }
+
+        .card-img {
+            width: 100%;
+            height: 200px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #bbb;
+        }
+
+        .card-body { padding: 20px; }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.7rem;
+            color: white;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .bg-vente { background: #e67e22; }
+        .bg-service { background: var(--secondary); }
+        .bg-entraide { background: #3498db; }
+
+        .price { font-size: 1.3rem; font-weight: 600; color: var(--dark); margin: 10px 0; }
+
+        /* Bouton WhatsApp */
+        .btn-wa {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            gap: 10px;
+            transition: 0.3s;
+        }
+
+        .btn-wa:hover { background: #1ebd59; }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.6rem; }
+            .container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo">MADA-CONNECT</a>
+    <nav class="nav-links">
+        <a href="#ventes">VENTES</a>
+        <a href="#services">SERVICES</a>
+        <a href="#entraide">ENTRAIDE</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Gagnez de l'argent, <br>Aidez la communauté.</h1>
+    <p>La première plateforme solidaire 100% Malagasy.</p>
+</section>
+
+<!-- SECTION VENTES -->
+<div id="ventes">
+    <h2 class="section-title">Ventes & Boutique</h2>
+    <div class="container">
+        <div class="card">
+            <div class="card-img">Photo Produit</div>
+            <div class="card-body">
+                <span class="badge bg-vente">Boutique</span>
+                <h3>Miel Pur de Manakara</h3>
+                <p>100% naturel, bouteille de 1 Litre. Qualité export.</p>
+                <p class="price">25 000 Ar</p>
+                <a href="https://wa.me/261340000000?text=Bonjour+je+veux+commander+votre+miel" class="btn-wa">Commander sur WhatsApp</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SECTION SERVICES -->
+<div id="services">
+    <h2 class="section-title">Services Professionnels</h2>
+    <div class="container">
+        <div class="card">
+            <div class="card-img">Photo Service</div>
+            <div class="card-body">
+                <span class="badge bg-service">Expertise</span>
+                <h3>Dépannage Informatique</h3>
+                <p>Réparation PC, Installation Système, Nettoyage. Tana et environs.</p>
+                <p class="price">Sur devis</p>
+                <a href="https://wa.me/261340000000?text=Bonjour+j'ai+un+probleme+avec+mon+ordinateur" class="btn-wa">Demander un service</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SECTION ENTRAIDE -->
+<div id="entraide">
+    <h2 class="section-title">Entraide Gratuite</h2>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <span class="badge bg-entraide">Don / Aide</span>
+                <h3>Livres Bac D à donner</h3>
+                <p>Je donne mes anciens manuels de maths et physique pour aider un futur bachelier.</p>
+                <p class="price" style="color: #3498db;">GRATUIT</p>
+                <a href="https://wa.me/261340000000?text=Bonjour+je+serais+interessé+par+les+livres+gratuits" class="btn-wa" style="background:#3498db">Contacter le donneur</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p><strong>Mada-Connect 2026</strong></p>
+    <p>Une initiative pour booster l'économie numérique locale.</p>
+</footer>
+
+</body>
+</html>
