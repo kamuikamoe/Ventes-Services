@@ -1,0 +1,18 @@
+# Configuration de financement sur mesure pour kamuikamoe
+# Dépôt : Ventes-Services
+
+# Soutien direct via GitHub Sponsors
+github: [kamuikamoe]
+
+# Plateforme de micro-dons (très populaire pour les créateurs)
+ko_fi: kamuikamoe
+
+# Plateforme de dons récurrents (type pourboire)
+liberapay: kamuikamoe
+
+# Liens de paiement personnalisés (les plus utilisés à Madagascar)
+custom: [
+  'https://www.paypal.me/kamuikamoe', 
+  'https://me.buymeacoffee.com/kamuikamoe',
+  'https://page-de-paiement-personnalisee.com/ventes-services'
+]
